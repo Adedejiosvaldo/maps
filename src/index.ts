@@ -3,4 +3,4 @@
 
 import { CustomeMap } from "./classes/Map";
 
-new CustomeMap();
+new CustomeMap("map");

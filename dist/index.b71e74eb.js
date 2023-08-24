@@ -577,15 +577,15 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 // import { User } from "./classes/User";
 // import { Company } from "./classes/Company";
 var _map = require("./classes/Map");
-new (0, _map.CustomeMap)();
+new (0, _map.CustomeMap)("map");
 
 },{"./classes/Map":"2hd50"}],"2hd50":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CustomeMap", ()=>CustomeMap);
 class CustomeMap {
-    constructor(){
-        this.googleMap = new google.maps.Map(document.getElementById("map"), {
+    constructor(divId){
+        this.googleMap = new google.maps.Map(document.getElementById(divId), {
             zoom: 1,
             center: {
                 lat: 0,

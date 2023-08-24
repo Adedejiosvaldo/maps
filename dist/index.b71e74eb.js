@@ -574,7 +574,15 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"h7u1C":[function(require,module,exports) {
-console.log("RUnning");
+// import { User } from "./classes/User";
+// import { Company } from "./classes/Company";
+new google.maps.Map(document.getElementById("map"), {
+    zoom: 1,
+    center: {
+        lat: 0,
+        lng: 0
+    }
+});
 
 },{}]},["2ZwPD","h7u1C"], "h7u1C", "parcelRequire57d4")
 

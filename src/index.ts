@@ -1,6 +1,11 @@
 // import { User } from "./classes/User";
 // import { Company } from "./classes/Company";
 
-import { CustomeMap } from "./classes/Map";
+// import { customMap } from "./classes/Map";
 
-new CustomeMap("map");
+// new customMap("map");
+
+new google.maps.Map(document.getElementById("map")!, {
+  zoom: 1,
+  center: { lat: 0, lng: 0 },
+});

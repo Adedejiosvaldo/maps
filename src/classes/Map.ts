@@ -1,4 +1,4 @@
-export class CustomeMap {
+export class customMap {
   private googleMap: google.maps.Map;
 
   constructor(divId: string) {

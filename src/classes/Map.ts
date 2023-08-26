@@ -1,8 +1,4 @@
-import { User } from "./User";
-import { Company } from "./Company";
-
 // Interface -> Gate Keepee
-
 // Instructions to every class on how they
 // can be an argumenet to add marker
 interface Mappable {
@@ -28,14 +24,4 @@ export class customMap {
       },
     });
   }
-
-  //   addCompanyMarker(company: Company): void {
-  //     new google.maps.Marker({
-  //       map: this.googleMap,
-  //       position: {
-  //         lat: company.location.lati,
-  //         lng: company.location.long,
-  //       },
-  //     });
-  //   }
 }

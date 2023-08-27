@@ -2,7 +2,10 @@
 // Instructions to every class on how they
 // can be an argumenet to add marker
 interface Mappable {
+  name: string;
   location: { lat: number; lng: number };
+
+  markerContent(): string;
 }
 
 export class customMap {
@@ -25,7 +28,9 @@ export class customMap {
     });
 
     marker.addListener("click", () => {
-      const infoWindow = new google.maps.InfoWindow({ content: "Hello" });
+      const infoWindow = new google.maps.InfoWindow({
+        content: mappable.markerContent(),
+      });
       infoWindow.open(this.googleMap, marker);
     });
   }

@@ -1,10 +1,9 @@
 // Interface -> Gate Keepee
 // Instructions to every class on how they
 // can be an argumenet to add marker
-interface Mappable {
+export interface Mappable {
   name: string;
   location: { lat: number; lng: number };
-
   markerContent(): string;
 }
 
